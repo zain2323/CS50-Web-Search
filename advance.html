@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link href="styles.css" rel="stylesheet">
+        <!-- CSS only -->
+        <style>
+            .logo
+            {
+                margin-top: 20px;
+                margin-left: 10px;
+                width: 65px;
+                height: 25px;
+            }
+
+            .spacing
+            {
+                margin-left: 20px;
+                padding: 10px;
+
+            }
+            #adv-search
+            {
+                margin-top: 30px;
+                margin-bottom: 15px;
+                color: #d93025;
+                font-size: 20px;
+            }
+
+            .text-bars
+            {
+                margin-left: 30px;
+                height: 30px;
+                padding: 1px 8px;
+                border-radius: 1px;
+                border: 1px solid #d9d9d9;
+                font-size: 13px;
+                width: 610px;
+            }
+
+            .text-bars:focus
+            {
+                outline: none !important;
+                border-color: #719ECE;
+                box-shadow: 0 0 1px #719ECE;
+            }
+            td
+            {
+                padding-top: 10px;
+            }
+            .submit
+            {
+                background-color: #3079ed;
+                color: white;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 6px;
+                padding-right: 6px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid #3079ed;
+                display: block;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+             <div class="position-relative">
+                 <img class="logo" src="google.png" alt="google.com">
+            </div>
+            <legend id="adv-search" class="spacing">Advanced Search</legend>
+            <hr>
+            <form action="https://google.com/search">
+                <label class="spacing" style="font-size: 18px;">Find pages with...</label>
+                <table>
+                    <tr>
+                      <td align="left"><span class="spacing">all these words:</span></td>
+                      <td align="left"><input type="text" class="text-bars" name="as_q"></td>
+                    </tr>
+                    <tr>
+                      <td align="left" ><span class="spacing">this exact word or phrase:</span></td>
+                      <td align="left"><input type="text" class="text-bars" name="as_eqp"></td>
+                    </tr>
+                    <tr>
+                      <td align="left"><span class="spacing">any of these words:</span></td>
+                      <td align="left"><input type="text" class="text-bars" name="as_oq"></td>
+                    </tr>
+                    <tr>
+                        <td align="left"><span class="spacing">none of these words:</span></td>
+                        <td align="left"><input type="text" class="text-bars" name="as_eq"></td>
+                    </tr>
+                    <tr>
+                        <td align="left"><span class="spacing">numbers ranging from:</span></td>
+                        <td align="left"><input style="width:285px" type="text" class="text-bars" name="as_nlo"><span style="margin-left: 15px;">to</span><input style="width:284px; margin-left: 15px" type="text" class="text-bars" name="as_nhi">
+                        </td>
+                    </tr>
+                  </table> 
+                  <input class="submit" type="submit" value="Advanced search">
+            </form>
+            <a href="index.html" class="topright" style="margin-left:10px;">Google search</a>
+        </div>  
+    </body>
+</html>
